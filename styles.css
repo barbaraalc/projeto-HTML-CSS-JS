@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
+
+:root {
+    --primary-color: lightsalmon; 
+    --secondery-color: dimgrey;
+    --tertiary-color: gainsboro; 
+}
+
+
+body {
+    background-color: var(--primary-color);
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+}
+
+#container {
+height: 525px;
+width: 360px;
+margin: 100px auto;
+background-color: #f6f2ed;
+box-shadow: 10px 10px #b7b4b1;
+border-radius: 20px;
+}
+.title {
+background-color:#e2cfceb1;
+color: var(--secondery-color);
+padding: 20px;
+text-transform: uppercase;
+font-size: 18px;
+font-weight: normal;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+text-align: center;
+}
+
+.tipsForms {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.formimput {
+    background: white;
+    width: 40px;
+    padding: 5px 5px 8px 8px;
+}
+
+.formimput:focus {
+    border: 3px solid var(--primary-color);
+    outline: none;
+}
+
+.formselect {
+    width: 180px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.formsubmit {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: var(--primary-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white
+}
+
+#totalTip {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}

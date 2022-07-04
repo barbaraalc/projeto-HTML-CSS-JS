@@ -1,0 +1,55 @@
+git clone https://github.com/barbaraalc/projeto-HTML-CSS-JS.git
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Calculadora de gorjetas</title>
+</head>
+<body>
+    <div id="container">
+    <div>
+       
+  <h1 class="title">Calculadora de gorjetas</h1> 
+    </div>
+<div>
+    <form class="tipsForms" id="tipsForms">
+        <label for="bill">
+            <p>Quanto ficou a conta?</p>
+            </label>
+            <p>
+                R$ <input type="number" pleceholder="100" name="bill" id="bill" class="formimput" required>
+                </p>
+        <label for="seviceQual">
+            <p>Como foi seu serviço</p>
+        </label>
+        <p>
+            <select name="serviceQual" id="serviceQual" class="formselect" required>
+                <option disable selected value="0">escolha uma opção</option>
+                <option value="0,3">30% - incrivel</option>
+                <option value="0,2">20% - bom</option>
+                <option value="0,15">15% - aceitavel</option>
+                <option value="0,10">10% - ruim</option>
+                <option value="0,5">0,5% - pessimo</option>
+            </select>
+            </p>
+            <label for="numberpeople">
+                <p>Quantas pessoas vão dividir a conta</p>
+            </label>
+            <p>
+            <input type="number" pleceholder="100" name="people" class="formimput" id="people" required> pessoa(as)
+                </p>
+                <button type="submit" class="formsubmit">calcular</button>
+    </forms>
+</div>
+<div id="totalTip">
+Gorjeta total:
+R$ <span id="tip">0.00</span>
+<span id="each">cada</span>
+    </div>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
